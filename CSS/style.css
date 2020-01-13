@@ -1,0 +1,508 @@
+@charset "UTF-8";
+/* line 4, ../SASS/style.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* line 12, ../SASS/style.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* line 15, ../SASS/style.scss */
+body {
+  line-height: 1; }
+
+/* line 18, ../SASS/style.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 21, ../SASS/style.scss */
+blockquote, q {
+  quotes: none; }
+
+/* line 25, ../SASS/style.scss */
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+/* line 30, ../SASS/style.scss */
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* line 34, ../SASS/style.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 45, ../SASS/style.scss */
+.header {
+  width: 100%;
+  padding-top: 13px;
+  height: 40px;
+  color: #f5f7fa;
+  border-bottom: 1px solid #e6e9ed;
+  font-size: 0;
+  box-sizing: border-box; }
+  /* line 56, ../SASS/style.scss */
+  .header__contact {
+    font-family: Source Sans Pro;
+    font-size: 12px;
+    color: #506a85; }
+    /* line 64, ../SASS/style.scss */
+    .header__contact__mail {
+      float: left;
+      margin-right: 28px;
+      transition: all 0.2s linear; }
+      /* line 69, ../SASS/style.scss */
+      .header__contact__mail:hover {
+        color: #00bc9c;
+        transition: all 0.2s linear; }
+    /* line 75, ../SASS/style.scss */
+    .header__contact__phone {
+      float: left;
+      transition: all 0.2s linear; }
+      /* line 78, ../SASS/style.scss */
+      .header__contact__phone:hover {
+        color: #00bc9c;
+        transition: all 0.2s linear; }
+    /* line 86, ../SASS/style.scss */
+    .header__contact__mail i, .header__contact__phone i {
+      margin-right: 8px; }
+    /* line 92, ../SASS/style.scss */
+    .header__contact__social {
+      float: right; }
+      /* line 95, ../SASS/style.scss */
+      .header__contact__social i {
+        margin-left: 20px; }
+
+/* line 105, ../SASS/style.scss */
+.container {
+  margin: 0 auto;
+  width: 1170px;
+  color: black;
+  overflow: hidden; }
+
+/* line 113, ../SASS/style.scss */
+.navbar {
+  width: auto;
+  background: #ffffff;
+  height: 114px;
+  padding-top: 38px;
+  box-sizing: border-box; }
+  /* line 120, ../SASS/style.scss */
+  .navbar__header {
+    width: 1000px;
+    float: left; }
+
+/* line 126, ../SASS/style.scss */
+.logo {
+  display: block;
+  background: url(img/logo.png);
+  width: 161px;
+  height: 40px;
+  margin-right: 60px;
+  float: left;
+  opacity: 1;
+  transition: all 0.5s linear; }
+  /* line 136, ../SASS/style.scss */
+  .logo:hover {
+    opacity: 0.6;
+    transition: all 0.5s linear; }
+
+/* line 147, ../SASS/style.scss */
+.nav__list {
+  float: left; }
+
+/* line 151, ../SASS/style.scss */
+.nav__item {
+  float: left;
+  position: relative; }
+
+/* line 156, ../SASS/style.scss */
+.nav__link {
+  display: block;
+  padding: 16px 22px 13px 22px;
+  text-decoration: none;
+  color: #6C7A89;
+  font-size: 15px;
+  font-family: Source Sans Pro;
+  color: #506a85;
+  font-weight: bold; }
+
+/* line 168, ../SASS/style.scss */
+.nav__item:hover .nav__link {
+  background-color: #f5f7fa;
+  color: #00bc9c;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border: solid 1px #e4e8ec; }
+
+/* line 176, ../SASS/style.scss */
+.submenu {
+  visibility: hidden;
+  background-color: #E1E8ED;
+  transition: opacity 0.5s;
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10000; }
+
+/* line 189, ../SASS/style.scss */
+.nav__item:hover .submenu {
+  visibility: visible;
+  opacity: 1; }
+
+/* line 202, ../SASS/style.scss */
+.navbar__search {
+  float: right;
+  padding-top: 16px; }
+
+/* line 216, ../SASS/style.scss */
+.latest-works {
+  height: 1270px;
+  width: 100%;
+  background: #f2f5f7; }
+
+/* line 222, ../SASS/style.scss */
+.caption {
+  text-align: center;
+  padding-top: 132px; }
+
+/* line 230, ../SASS/style.scss */
+.figure {
+  float: left; }
+  /* line 233, ../SASS/style.scss */
+  .figure--first {
+    margin-right: 30px; }
+  /* line 237, ../SASS/style.scss */
+  .figure__img {
+    background: url(img/brand.png);
+    width: 570px;
+    height: 390px; }
+    /* line 242, ../SASS/style.scss */
+    .figure__img--first {
+      background: url(img/grandmotel.png); }
+  /* line 248, ../SASS/style.scss */
+  .figure__caption {
+    background: #ffffff;
+    width: 568px;
+    height: 112px;
+    border-bottom: 1px solid #e6e9ed;
+    border-left: 1px solid #e6e9ed;
+    border-right: 1px solid #e6e9ed; }
+    /* line 256, ../SASS/style.scss */
+    .figure__caption__pos {
+      padding-top: 38px; }
+    /* line 260, ../SASS/style.scss */
+    .figure__caption h1 {
+      font-family: Lato;
+      font-size: 20px;
+      color: #506a85; }
+    /* line 266, ../SASS/style.scss */
+    .figure__caption p {
+      padding-top: 13px;
+      font-family: Source Sans Pro;
+      font-size: 14px;
+      color: #73879c; }
+
+/* line 279, ../SASS/style.scss */
+.info i {
+  font-size: 70px;
+  color: #0cbfa1;
+  float: left; }
+
+/* line 286, ../SASS/style.scss */
+.text {
+  float: left;
+  width: 270px;
+  margin-right: 30px; }
+  /* line 291, ../SASS/style.scss */
+  .text--last {
+    margin-right: 0px; }
+
+/* line 299, ../SASS/style.scss */
+.news {
+  width: 700px; }
+  /* line 302, ../SASS/style.scss */
+  .news__title {
+    font-size: 73px;
+    text-indent: 2.32px;
+    font-family: Lato;
+    padding: 36px 36px;
+    color: white;
+    text-transform: uppercase;
+    background: #506a85;
+    width: auto;
+    display: inline-block;
+    margin-bottom: 4px; }
+
+/* line 317, ../SASS/style.scss */
+.hero {
+  width: 100%;
+  height: 881px;
+  background: url(img/hero.png);
+  padding-top: 203px;
+  box-sizing: border-box; }
+
+/* line 325, ../SASS/style.scss */
+.hero-description {
+  font-family: Source Sans Pro;
+  font-size: 24px;
+  color: #506a85;
+  padding-bottom: 64px;
+  line-height: 33px; }
+
+/* line 338, ../SASS/style.scss */
+.who-we-are {
+  width: 100%;
+  background: #ffffff;
+  height: 670px; }
+
+/* line 346, ../SASS/style.scss */
+.carousel {
+  float: left;
+  padding-top: 80px; }
+  /* line 350, ../SASS/style.scss */
+  .carousel__slider {
+    float: left;
+    background: url(img/slider1.png);
+    height: 185px;
+    width: 270px;
+    margin-right: 30px;
+    margin-bottom: 50px; }
+    /* line 358, ../SASS/style.scss */
+    .carousel__slider--fourth {
+      background: url(img/slider4.png);
+      margin-right: 0px; }
+    /* line 363, ../SASS/style.scss */
+    .carousel__slider--third {
+      background: url(img/slider3.png); }
+    /* line 367, ../SASS/style.scss */
+    .carousel__slider--second {
+      background: url(img/slider2.png); }
+
+/* line 377, ../SASS/style.scss */
+.get-in-touch {
+  width: 100%;
+  height: 480px;
+  background: #ffffff; }
+
+/* line 387, ../SASS/style.scss */
+.button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 19px 26px;
+  background: #00bc9c;
+  color: white;
+  text-transform: uppercase;
+  font-family: Source Sans Pro;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 4px;
+  border-bottom: 1px solid #00a085;
+  opacity: 1;
+  transition: all 0.5s linear; }
+  /* line 402, ../SASS/style.scss */
+  .button:hover {
+    background: #17a78b;
+    border-bottom: 1px solid #148e76;
+    transition: all 0.5s linear; }
+  /* line 409, ../SASS/style.scss */
+  .button--footer {
+    padding: 10px 10px;
+    position: absolute;
+    right: 5px;
+    top: 72px;
+    font-size: 13px; }
+
+/* line 421, ../SASS/style.scss */
+.title {
+  font-family: Lato;
+  font-size: 44px;
+  color: #506a85;
+  padding-bottom: 44px; }
+  /* line 427, ../SASS/style.scss */
+  .title--who {
+    font-size: 26px;
+    padding-top: 12px;
+    padding-bottom: 33px; }
+
+/* line 435, ../SASS/style.scss */
+.description {
+  font-family: Source Sans Pro;
+  color: #73879c;
+  line-height: 34px;
+  font-size: 22px;
+  padding-bottom: 44px; }
+  /* line 442, ../SASS/style.scss */
+  .description--who {
+    font-size: 16px;
+    line-height: 25px; }
+
+/* line 452, ../SASS/style.scss */
+.footerFirst {
+  width: 100%;
+  background: #2f4052;
+  height: 350px;
+  padding-top: 74px;
+  box-sizing: border-box; }
+
+/* line 461, ../SASS/style.scss */
+.article {
+  width: 270px;
+  float: left;
+  margin-right: 30px; }
+  /* line 466, ../SASS/style.scss */
+  .article__img {
+    height: 85px;
+    width: 125px;
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    opacity: 1;
+    transition: all 0.2s linear; }
+    /* line 476, ../SASS/style.scss */
+    .article__img:hover:before {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      background: #00bc9c;
+      opacity: 0.9;
+      transition: all 0.2s linear; }
+    /* line 486, ../SASS/style.scss */
+    .article__img:hover:after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      content: "+";
+      font-size: 36px;
+      font-family: Lato;
+      color: #ffffff;
+      transform: translate(-50%, -50%); }
+  /* line 499, ../SASS/style.scss */
+  .article:last-child {
+    margin-right: 0px; }
+  /* line 503, ../SASS/style.scss */
+  .article__title {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: Lato;
+    font-weight: 900;
+    padding-bottom: 28px; }
+  /* line 512, ../SASS/style.scss */
+  .article__description {
+    float: left;
+    font-family: Source Sans Pro;
+    font-weight: normal;
+    color: #a3b1bf;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.28px;
+    padding-bottom: 20px; }
+  /* line 523, ../SASS/style.scss */
+  .article__description--first {
+    padding-top: 25px; }
+  /* line 527, ../SASS/style.scss */
+  .article__link {
+    float: left; }
+    /* line 531, ../SASS/style.scss */
+    .article__link a {
+      color: #a3b1bf;
+      font-family: Source Sans Pro;
+      font-weight: bold;
+      font-size: 15px;
+      text-decoration: none;
+      transition: all 0.2s linear; }
+      /* line 539, ../SASS/style.scss */
+      .article__link a:hover {
+        color: #00bc9c;
+        transition: all 0.2s linear; }
+  /* line 552, ../SASS/style.scss */
+  .article__contact {
+    color: #a3b1bf;
+    font-size: 14px;
+    font-family: Source Sans Pro;
+    line-height: 22px;
+    letter-spacing: 0.28px;
+    transition: all 0.2s linear; }
+    /* line 560, ../SASS/style.scss */
+    .article__contact i {
+      padding-right: 11px; }
+    /* line 564, ../SASS/style.scss */
+    .article__contact:hover {
+      color: #00bc9c;
+      transition: all 0.2s linear; }
+  /* line 571, ../SASS/style.scss */
+  .article__input {
+    width: 100%;
+    padding: 15px 10px;
+    background: #4e5c6c;
+    border: none;
+    font-family: Source Sans Pro;
+    font-size: 14px;
+    color: #a3b1bf;
+    border-radius: 2px;
+    letter-spacing: 0.28px; }
+    /* line 583, ../SASS/style.scss */
+    .article__input:hover {
+      background: #596675;
+      color: #ffffff; }
+
+/* line 594, ../SASS/style.scss */
+.form {
+  position: relative; }
+
+/* line 600, ../SASS/style.scss */
+.footerEnding {
+  padding-top: 35px;
+  height: 84px;
+  width: 100%;
+  background: #283645;
+  box-sizing: border-box; }
+  /* line 607, ../SASS/style.scss */
+  .footerEnding__tekst {
+    color: #707e8c;
+    font-size: 14px;
+    font-family: Source Sans Pro;
+    float: left; }
+
+/* line 615, ../SASS/style.scss */
+.menu {
+  float: right; }
+  /* line 618, ../SASS/style.scss */
+  .menu__item {
+    float: left;
+    padding: 0px 10px;
+    list-style: none; }
+    /* line 623, ../SASS/style.scss */
+    .menu__item::before {
+      content: "•";
+      color: #707e8c;
+      margin-right: 10px;
+      font-size: 14px;
+      font-family: Source Sans Pro; }
+    /* line 631, ../SASS/style.scss */
+    .menu__item:first-child:before {
+      content: ''; }
+  /* line 641, ../SASS/style.scss */
+  .menu__link {
+    text-decoration: none;
+    color: #707e8c;
+    font-size: 14px;
+    font-family: Source Sans Pro;
+    transition: all 0.2s linear; }
+    /* line 648, ../SASS/style.scss */
+    .menu__link:hover {
+      color: #00bc9c;
+      transition: all 0.2s linear; }
+
+/*# sourceMappingURL=style.css.map */
